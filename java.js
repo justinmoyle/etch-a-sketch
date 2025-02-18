@@ -1,9 +1,8 @@
 const container = document.getElementById('gridContainer');
 
-for (let i = 0; i < 16; i++) {
-    for (let j = 0; j < 16; j++) {
+for (let i = 0; i < 256; i++) {
         const gridItem = document.createElement('div');
-        gridItem.classList.add('grid-item');
+        gridItem.classList.add('gridItem');
         gridContainer.appendChild(gridItem);
-    }
 }
+
