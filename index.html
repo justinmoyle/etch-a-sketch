@@ -3,12 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etch-A-Sketch</title>
+    <title>Sketchpad</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="buttonContainer"></div>
-    <div id="gridContainer" class="gridContainer"></div>
+    <div class="flex-container">
+        <div class="title"><h1>Sketchpad</h1></div>
+        <div class="content">
+            <div class="board"></div>
+            <div class="buttons">
+                <button>Black</button>
+                <button>White</button>
+                <button>Random</button>
+                <button>Reset</button>
+            </div>
+        </div>
+        <div>
+            <input type="text" placeholder="Size of Board" value="16">
+            <button>Set Size</button>
+        </div>
+    </div>
+    <div class="pad">
+        <div id="buttonContainer"></div>
+        <div id="gridContainer" class="gridContainer"></div>
+    </div>
 </body>
 <script src="java.js"></script>
 </html>
