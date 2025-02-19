@@ -22,10 +22,13 @@ function populateBoard(size){
 populateBoard(16);
 
 function changeSize(input) {
+    let errorElement = document.querySelector("#error");
+
     if (input >= 2 && input <= 100){
+        errorElement.style.display = "none";
         populateBoard(input);
     } else {
-        console.log("Invalid Input e.g. 2-100");
+        errorElement.style.display = "block";
     }
 }
 
