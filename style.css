@@ -32,7 +32,7 @@
     height: 80%;
     display: grid;
     margin-bottom: 25px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 40px -5px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 20px 30px;
 }
 
 .title {
@@ -52,7 +52,7 @@ input {
     font-size: 15px;
     font-family: 'Roboto';
     font-weight: 500;
-    width: 390px;
+    width: 50%;
     text-align: center;
     border-radius: 100px;
     padding: 10px;
