@@ -17,15 +17,15 @@
             <div class="board"></div>
             <div class="editButtons">
                 <div class="buttons">
-                    <button onclick="changeColor(`black`)" class="buttonFade">BLACK</button>
-                    <button onclick="changeColor(`gray`)" class="buttonFade">GRAY</button>
-                    <button onclick="changeColor(`white`)" class="buttonFade">ERASER</button>
-                    <button onclick="changeColor(`random`)" class="buttonFade">RANDOM</button>
-                    <button onclick="resetBoard()" class="buttonFade">RESET</button>
+                    <button onclick="changeColor(`black`)" class="buttonFade" id="blackButton">BLACK</button>
+                    <button onclick="changeColor(`gray`)" class="buttonFade" id="grayButton">GRAY</button>
+                    <button onclick="changeColor(`white`)" class="buttonFade" id="eraserButton">ERASER</button>
+                    <button onclick="changeColor(`random`)" class="buttonFade" id="randomButton">RANDOM</button>
+                    <button onclick="resetBoard()" class="buttonFade" id="resetButton">RESET</button>
                 </div>
                 <div class="setBoardSize">
                     <input type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)">
-                    <button>SET SIZE</button>
+                    <button id="setSizeButton">SET SIZE</button>
                 </div>
                 <div class="error" id="error" style="display: none;">
                     Must be betwen 2 and 100
